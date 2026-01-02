@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSV Form</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Enter Date &amp; Description</h1>
+
+    <form action="/submit" method="post" class="card">
+      <label for="date">Date</label>
+      <input id="date" type="date" name="date" required />
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description" placeholder="Type something..." required></textarea>
+
+      <button type="submit">Save Entry</button>
+    </form>
+
+    <div class="link">
+      <a href="/entries">View Saved Entries</a>
+    </div>
+
+    <p class="hint">
+      Tip: This page is mobile-friendly. Just share your deployed link and it will open on Android/iOS.
+    </p>
+  </main>
+</body>
+</html>
